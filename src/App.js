@@ -27,10 +27,8 @@ export default function App() {
     setRepositories(repositories.map(repository => {
       if(repository.id === id){
         repository.likes = response.data.likes;
-        return repository;
-      }else{
-        return repository;
       }
+      return repository;
     }));
   };
 
